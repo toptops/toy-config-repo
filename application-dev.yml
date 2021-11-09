@@ -1,0 +1,44 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+
+spring:
+  datasource:
+    toy:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: {cipher}AQALPScdtOsR4J2UOB7itMzHt4/j0TtSI8feXrTHmZ7KlXaCcW5ontkY64NJV5dgvuCHaUe7tBLU8azJTe3rP3r1XiztclqK98rUVVGdqwaeQJh3OtN9ylcTDfeFC0ftbxyvcDsSpnOkPjbGJj7ESFs9UA7ZjQdPSyyfeJNs+FTHRXbCgXHjjLQJ0YNTBnzGT5IRKP/FOgvZFWjhL7/On5WslSAHpIcIycqxleJat3q207lV0XjURFtQhe9f4mpRujgbCoJkl4EOUpP6zVkrYhBKwngppZ0s2n+KEiqzOBnasn7zhbZSwuCI0cnBH7MdpSwIq8Zx7amvRLBpnvac2gY7oi2BWKt5q5o8FB+shbbQ3rBaFy4NYnImq+NKU/esdScY0dB1/Zepgwy5cqT0/vnLAQ6vTYIvF+OprqTUjD1K555frgoLDJl7e2400DMkxdZUElOja6qCvqibIkp9lmfCCHqY0nIMj3Fo7Ki4zY/XZsFm4gen1Air0nK0Es3U/Ns=
+      username: {cipher}AQAE8k9T+ddE/1qlMYPdxTgYSY5QOHF6mUM0OV2iBsTU3uTuRfK8VseoyChSoXfLp2+repkOGWQjCO0IdrjkWXWVkVI5f2h1QPu+T4t4JzgzaZrbO3zDVKUEkI8WPpfsnvDke+sIQH/5E+v0bEVbcZ3RXb+U3LrpBoHnXyEDZeVuSttuSFlYaSWg2unkEuVzRfaA32du/xnLenKPr5byL3qs6OYGS2IBh2CGQ0GTxpYspksWi6a3hfnwe1Pz0XCSjKzDWTM3xywfwqc6Si1yN/WiDU6bCsoZVf2ixSUzVXsoOAgG4tCFPXqpBQ206mySB/6ICcFkfvb3ha+ouNhO+xE6BspaAa4l6rraUkiKyPWbA/y6FCFJPYTud4ANOA2trWI=
+      password: {cipher}AQBx5EKc1fYq6l77TFzMN6wmNn0RVg/ugfp3WEKn5Jzmf4IlS/87WWylcQUTF0KM8jCMihHuOMkz3oepQrphd3HbLmTyQtIz33C/cqq3EXIDVVcuHoT27O7SJZuo2RwG6ZudeBQic98+uCsXBu3z19pc5unvSz1mm8+/zCixS+KshoIBUzer+Com421y/6+cjQAA7/UJ4pIQBkqHSpFs8iAczlv/Hl/eW0/1rDit4Qo2hg4fBVCelay+SG1pr4xOhGmXusZjuw31H/XBXln28a9DAA8B2W/BnsGtJIbUptvXsWNA7EaoxeIaJZ30q5UiLsNRwOJBb4DFPNE/sMLQ+SbjFGYkTkhg3C6QPuqSq6IxPiqXERynH52WIpE9fdW6Pgg=
+      pool-name: toy-mysql1
+      maxPoolSize: 150
+      maximumPoolSize: 250
+      auto-commit: false
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-id: {cipher}AQBrlKUZRCHgACaHTeEd0WIXbWQdJluM3xmuvk39EyapHfB3DFAYwfni+F/EpB1ywFWfOA02DxI6jzByUvx4igjvQmv2He8Fcp0DndTC/KPQTR1M5568cPMcWjNkm66DmxDYTiRXPhFZQTw9m9/J8ZkzEN652UPIfUdUrwcvYqkVPSC1po2SS+VGm8UKqyAWscolnd9bBSPUrPHERP4UMH6WdNgu5gthh9eADjwnHmM7OX4SB8/avRFgBqeSQAuFMamYCVoBwGdvVNEwCCTEAGGJ0811vSZWozofSFunQOYpIc95g4KTO7XdntiaXRlitN3WK+MEEwLdLHyChetyIae/+EyvcVzeqRovU7tzZULU3X1xKwW+MiD7nAYd2auJwdk=
+            client-secret: {cipher}AQAk7LxT86nOwmSPwTZ9L8CgsepqhofI0VamPYbBY7buFfqdOqh2hGv7E5bt78eKYyZLU8/ylyPhc6WO3mPH854kctBcQ8ZvvLh2FEb8bt6K1/TDmbA9HxqfAHOElsxE4xPgXLsEx+R3pnhuy9KuO2NFaXdP52tdGto80lfJPg8lde7n9r/Q4UNd9bixg0AknTOKwMnP6E8fs/wpX13eMy7d82jzqYqOpHley+fFtTP3vxJUhVup/lsXXw6vgUZqCDGzoPINHFiIIQr817m35jwVIrCOaMKjV0V3onGRGjX0bVAWWSl9ISI1S0LAPusE2uqGqmigzUYoPNf6rr1dP1VLs5LOHS9u907OuIcTTrO+p3X/4FxZ1N5ApKJ9Dy9FQhqru3XVEpqcIBw1F+1EmKKFJ05TcrxCfVBFUMXX0jfRqw==
+            redirect-uri: {cipher}AQB4JrKW3i3r27NhKOwCFHYSXJZEBiJ+fGJULfDdisKufvliTyXExks7E3wi/EQAhP8pWGUndxT/YPjSQPvWPh63jEe+zUB5jR6T4Q8zrwf73kJtdAym+VLD0Zj+r7vkaiL0+Ep22CjNXsZuLsDKY1xOCpEsehDKk8J3hpe9PRUZ0kokvoxGH3n+rcan5FzzmSOQuxFzWbZ0qD2TFP2gBuvpKET95Jd1fpjbskV7Vxjc7TmTJFLYfGAZyOp7RRcEJxE0d9qc7k3hCJF8RfIgihSmk3XDq5Oz+obfB3RTtUFnew80BEU+SNTduxMPtcdyjiqcev/7Q2/NSbkm3oqqIbEyu92+6+PN2WcfTgRNx9iYLqjtu+JhDm4zE7NH+VJFU3EjYGhSGtAJA8vig42PT2gN8xVBT8ViKGN4xUpEG8L5ig==
+            authorization-grant-type: authorization_code
+            client-authentication-method: POST
+            client-name: Kakao
+            scope:
+              - profile_nickname
+              - account_email
+          provider:
+            kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
