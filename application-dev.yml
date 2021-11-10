@@ -18,26 +18,26 @@ spring:
       maxPoolSize: 150
       maximumPoolSize: 250
       auto-commit: false
-  security:
-    oauth2:
-      client:
-        registration:
-          kakao:
-            client-id: '{cipher}AQBrlKUZRCHgACaHTeEd0WIXbWQdJluM3xmuvk39EyapHfB3DFAYwfni+F/EpB1ywFWfOA02DxI6jzByUvx4igjvQmv2He8Fcp0DndTC/KPQTR1M5568cPMcWjNkm66DmxDYTiRXPhFZQTw9m9/J8ZkzEN652UPIfUdUrwcvYqkVPSC1po2SS+VGm8UKqyAWscolnd9bBSPUrPHERP4UMH6WdNgu5gthh9eADjwnHmM7OX4SB8/avRFgBqeSQAuFMamYCVoBwGdvVNEwCCTEAGGJ0811vSZWozofSFunQOYpIc95g4KTO7XdntiaXRlitN3WK+MEEwLdLHyChetyIae/+EyvcVzeqRovU7tzZULU3X1xKwW+MiD7nAYd2auJwdk='
-            client-secret: '{cipher}AQAk7LxT86nOwmSPwTZ9L8CgsepqhofI0VamPYbBY7buFfqdOqh2hGv7E5bt78eKYyZLU8/ylyPhc6WO3mPH854kctBcQ8ZvvLh2FEb8bt6K1/TDmbA9HxqfAHOElsxE4xPgXLsEx+R3pnhuy9KuO2NFaXdP52tdGto80lfJPg8lde7n9r/Q4UNd9bixg0AknTOKwMnP6E8fs/wpX13eMy7d82jzqYqOpHley+fFtTP3vxJUhVup/lsXXw6vgUZqCDGzoPINHFiIIQr817m35jwVIrCOaMKjV0V3onGRGjX0bVAWWSl9ISI1S0LAPusE2uqGqmigzUYoPNf6rr1dP1VLs5LOHS9u907OuIcTTrO+p3X/4FxZ1N5ApKJ9Dy9FQhqru3XVEpqcIBw1F+1EmKKFJ05TcrxCfVBFUMXX0jfRqw=='
-            redirect-uri: '{cipher}AQB4JrKW3i3r27NhKOwCFHYSXJZEBiJ+fGJULfDdisKufvliTyXExks7E3wi/EQAhP8pWGUndxT/YPjSQPvWPh63jEe+zUB5jR6T4Q8zrwf73kJtdAym+VLD0Zj+r7vkaiL0+Ep22CjNXsZuLsDKY1xOCpEsehDKk8J3hpe9PRUZ0kokvoxGH3n+rcan5FzzmSOQuxFzWbZ0qD2TFP2gBuvpKET95Jd1fpjbskV7Vxjc7TmTJFLYfGAZyOp7RRcEJxE0d9qc7k3hCJF8RfIgihSmk3XDq5Oz+obfB3RTtUFnew80BEU+SNTduxMPtcdyjiqcev/7Q2/NSbkm3oqqIbEyu92+6+PN2WcfTgRNx9iYLqjtu+JhDm4zE7NH+VJFU3EjYGhSGtAJA8vig42PT2gN8xVBT8ViKGN4xUpEG8L5ig=='
-            authorization-grant-type: authorization_code
-            client-authentication-method: POST
-            client-name: Kakao
-            scope:
-              - profile_nickname
-              - account_email
-          provider:
-            kakao:
-            authorization-uri: https://kauth.kakao.com/oauth/authorize
-            token-uri: https://kauth.kakao.com/oauth/token
-            user-info-uri: https://kapi.kakao.com/v2/user/me
-            user-name-attribute: id
+  # security:
+  #   oauth2:
+  #     client:
+  #       registration:
+  #         kakao:
+  #           client-id: '{cipher}AQBrlKUZRCHgACaHTeEd0WIXbWQdJluM3xmuvk39EyapHfB3DFAYwfni+F/EpB1ywFWfOA02DxI6jzByUvx4igjvQmv2He8Fcp0DndTC/KPQTR1M5568cPMcWjNkm66DmxDYTiRXPhFZQTw9m9/J8ZkzEN652UPIfUdUrwcvYqkVPSC1po2SS+VGm8UKqyAWscolnd9bBSPUrPHERP4UMH6WdNgu5gthh9eADjwnHmM7OX4SB8/avRFgBqeSQAuFMamYCVoBwGdvVNEwCCTEAGGJ0811vSZWozofSFunQOYpIc95g4KTO7XdntiaXRlitN3WK+MEEwLdLHyChetyIae/+EyvcVzeqRovU7tzZULU3X1xKwW+MiD7nAYd2auJwdk='
+  #           client-secret: '{cipher}AQAk7LxT86nOwmSPwTZ9L8CgsepqhofI0VamPYbBY7buFfqdOqh2hGv7E5bt78eKYyZLU8/ylyPhc6WO3mPH854kctBcQ8ZvvLh2FEb8bt6K1/TDmbA9HxqfAHOElsxE4xPgXLsEx+R3pnhuy9KuO2NFaXdP52tdGto80lfJPg8lde7n9r/Q4UNd9bixg0AknTOKwMnP6E8fs/wpX13eMy7d82jzqYqOpHley+fFtTP3vxJUhVup/lsXXw6vgUZqCDGzoPINHFiIIQr817m35jwVIrCOaMKjV0V3onGRGjX0bVAWWSl9ISI1S0LAPusE2uqGqmigzUYoPNf6rr1dP1VLs5LOHS9u907OuIcTTrO+p3X/4FxZ1N5ApKJ9Dy9FQhqru3XVEpqcIBw1F+1EmKKFJ05TcrxCfVBFUMXX0jfRqw=='
+  #           redirect-uri: '{cipher}AQB4JrKW3i3r27NhKOwCFHYSXJZEBiJ+fGJULfDdisKufvliTyXExks7E3wi/EQAhP8pWGUndxT/YPjSQPvWPh63jEe+zUB5jR6T4Q8zrwf73kJtdAym+VLD0Zj+r7vkaiL0+Ep22CjNXsZuLsDKY1xOCpEsehDKk8J3hpe9PRUZ0kokvoxGH3n+rcan5FzzmSOQuxFzWbZ0qD2TFP2gBuvpKET95Jd1fpjbskV7Vxjc7TmTJFLYfGAZyOp7RRcEJxE0d9qc7k3hCJF8RfIgihSmk3XDq5Oz+obfB3RTtUFnew80BEU+SNTduxMPtcdyjiqcev/7Q2/NSbkm3oqqIbEyu92+6+PN2WcfTgRNx9iYLqjtu+JhDm4zE7NH+VJFU3EjYGhSGtAJA8vig42PT2gN8xVBT8ViKGN4xUpEG8L5ig=='
+  #           authorization-grant-type: authorization_code
+  #           client-authentication-method: POST
+  #           client-name: Kakao
+  #           scope:
+  #             - profile_nickname
+  #             - account_email
+  #         provider:
+  #           kakao:
+  #           authorization-uri: https://kauth.kakao.com/oauth/authorize
+  #           token-uri: https://kauth.kakao.com/oauth/token
+  #           user-info-uri: https://kapi.kakao.com/v2/user/me
+  #           user-name-attribute: id
 
 auth:
   jwt:
