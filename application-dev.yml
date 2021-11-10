@@ -21,6 +21,11 @@ spring:
       maximumPoolSize: 250
       auto-commit: false
 
+auth:
+  jwt:
+    token: {cipher}AQByIN066/DNpOIO7L3Zg4pAB7ZjdKHEdqCWjzwH07XIe47zFuAGMOfKIqO79WN+j7fIp32i1yJHqwdCDBtV70HXsx2jZNZApsR9oOG7okSwJTz9BpS3B1aAS1BmvmNX/+j8GaomwZbV2DfG5WhdYlrUjIEqwMWjdxVeYES71AzPkt1YYu36nHyjRGYvfZHP8OzrQRfJEJPvtv2aAGJePc+JC2ibFZykGnxfXsKJC8rsUobYllHnaxzjJaDUAu1Y+4KAAeUvIg3+Zqn3whujgf5RFbbz5ZkJ5sE8WnpWKHWh1P91fIXTKpdN49bupHUlD/gtLb4knzeJyRdvlKSJ6ObfxeiC25KCWZR9mItX+lcmiRo9Z3HqCEz88/yWUmPwo6GxqXHf82F2FKouAnW2pTHFqkV+Z+sDQzayHkDdbhT+t+oYaEreHsQm39l3uB2pB862NJ1GDP8fdqLlmoOb7U/HEy+VHMncr5lPD0B5s0SPXw==
+    expire: 315360000
+
 spring:
   security:
     oauth2:
